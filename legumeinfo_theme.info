@@ -1,5 +1,3 @@
-
-; name = Bartik
 name = legumeinfo_theme
 description = A flexible, recolorable theme with many regions.
 package = Core
@@ -37,9 +35,7 @@ regions[footer] = Footer
 
 settings[shortcut_module_link] = 0
 
-
-; Information added by Drupal.org packaging script on 2014-05-08
-version = "7.28"
+version = "develop (was 7.28)"
 project = "drupal"
 datestamp = "1399522731"
 
