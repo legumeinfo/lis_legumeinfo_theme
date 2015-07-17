@@ -1,0 +1,243 @@
+/* ---------- Basic Layout Styles ----------- */
+
+html,
+body,
+#page  {
+  height: 100%;
+  
+}
+#page-wrapper {
+  min-height: 100%;
+  min-width: 960px;
+
+}
+#header div.section,
+#featured div.section,
+#messages div.section,
+/*#main,*/
+#triptych,
+#footer-columns,
+#footer {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*pbase: #main separated from rest*/
+#main {  
+  width: 95%;/*width: 960px;*/
+  margin-left: 5px;/*margin-left: auto;*/
+  margin-right: auto;
+}
+#header div.section {
+  position: relative;
+  margin-left: 4px;
+  margin-right: 0px;
+}
+
+.with-secondary-menu .region-header {
+  margin-top: 0; /*3em;*/
+}
+.without-secondary-menu .region-header {
+  margin-top: 15px;
+}
+#secondary-menu {
+  position: absolute;
+  right: 0; /* LTR */
+  top: 0;
+  width: 480px;
+}
+#content,
+#sidebar-first,
+#sidebar-second,
+.region-triptych-first,
+.region-triptych-middle,
+.region-triptych-last,
+.region-footer-firstcolumn,
+.region-footer-secondcolumn,
+.region-footer-thirdcolumn,
+.region-footer-fourthcolumn {
+  display: inline;
+  float: left; /* LTR */
+  position: relative;
+}
+.one-sidebar #content {
+  width: 75%; /*720px;*/
+}
+.two-sidebars #content {
+  width: 480px;
+}
+.no-sidebars #content {
+  width: 1280px; /*960px;*/
+  float: none;
+}
+#sidebar-first,
+#sidebar-second {
+  width: 25%; /*240px;*/
+}
+#main-wrapper {
+  min-height: 300px;
+}
+#content .section,
+.sidebar .section {
+  padding: 0 15px;
+}
+#breadcrumb {
+  margin: 0 15px;
+}
+.region-triptych-first,
+.region-triptych-middle,
+.region-triptych-last {
+  margin: 20px 20px 30px;
+  width: 280px;
+}
+#footer-wrapper {
+  padding: 35px 5px 30px;
+}
+.region-footer-firstcolumn,
+.region-footer-secondcolumn,
+.region-footer-thirdcolumn,
+.region-footer-fourthcolumn {
+  padding: 0 10px;
+  width: 220px;
+}
+#footer {
+  width: 940px;
+  min-width: 920px;
+}
+/* Code to fix the sub menus */
+.region-header { clear: both; float: none; margin: 0;} /* move menu back into block flow */
+.region-header .block-menu {font-size: 1em; width: auto; margin: 0; border: 0;} /* move menu back into block flow. The 1em is to reset the region-header block 0.857em */
+.region-header .block-menu li a {border-bottom: 0;}
+
+/* dropdown stuff */
+#main-menu-links a {
+  float: none;
+}
+#main-menu-links ul {
+  padding: 0;
+  position: fixed;
+  left: -1000px;
+  top: 11.40em; /* 11.40em old-value 9.8em; This property sets the sub menu position when we hover the main menu */
+}
+#main-menu-links li:hover ul {
+  background: #C7DEC7;
+  left: auto;
+  z-index: 1000;
+}
+#main-menu-links ul li {
+  float: none;
+  margin: 0;
+  padding: 0;
+  background: #C7DEC7;/*#ccc;*/
+  background: rgb(199, 222, 199); /*rgba(200, 200, 200, 1);*/
+}
+
+#main-menu-links ul a {
+  background: #C7DEC7;/*#ccc;*/
+  background: rgb(199, 222, 199); /*rgba(200, 200, 200, 1);*/
+  width: 150px;
+  -khtml-border-radius-topleft: 0px;
+  -khtml-border-radius-topright: 0px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;'#required' => TRUE,
+  -webkit-border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+} 
+/* active link */
+#main-menu-links li.active-trail a {
+background: #C7DEC7; /*   background: #ccc;*/
+background: rgb(199, 222, 199);/*background: rgba(200, 200, 200, 0.95);*/ /*rgba(200, 200, 200, 0.7);*/
+}
+#main-menu-links li.active-trail>a {
+  background: #ffffff; /*#ffffff;*/
+}
+
+/*
+#main-menu-links a, #main-menu-links a:visited {
+    background: url("images/bg-shade-pnut-grad.png") repeat-x scroll 0 100% #fff;
+    border: medium none;
+    color: #400000;
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 1.2em;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #fff;
+}
+#main-menu-links a:hover, #main-menu-links a:visited:hover, #main-menu-links .active-trail a.active:hover, #main-menu-links .active-trail a:hover {
+    background: url("images/bg-shade-medium.png") repeat-x scroll 0 100% #b3b3b3;
+    color: #400000;
+    text-shadow: none;
+}
+#main-menu-links .sfHover a, #main-menu-links .sfHover a:hover {
+    background: url("images/bg-shade-light-flip.png") repeat-x scroll 0 0 #fff;
+    color: #777;
+}
+#main-menu-links .active-trail a, #main-menu-links .active-trail a.active {
+    background: none repeat scroll 0 0 transparent;
+    color: #000;
+}
+#main-menu-links ul ul {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #ddd #ddd;
+    border-image: none;
+    border-right: 1px solid #ddd;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    color: #555;
+    display: none;
+    left: 0;
+    line-height: 1.25em;
+    margin: 0 0 0 -1px;
+    padding: 0;
+    position: absolute;
+    top: 2.75em;
+    width: 15em;
+    z-index: 1000;
+}
+#main-menu-links ul ul li {
+    border-right: medium none;
+    display: block;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 15em;
+}
+#main-menu-links li .expanded ul {
+    margin: -2.65em 0 0 15em;
+}
+#main-menu-links ul ul li a, #main-menu-links ul ul li a:visited, #main-menu-links ul li.active-trail ul li a, #main-menu-links .sfHover ul li a {
+  /*  background: none repeat scroll 0 0 rgba(0, 0, 0, 0); 
+    border-bottom: 1px solid #eee;
+    color: #555;
+    display: block;
+    font-size: 0.9em;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 0.5em 1.25em 0.5em 0.75em;
+    text-decoration: none;
+    background: #ccc;
+    background: rgba(200, 200, 200, 0.7);
+}
+#main-menu-links ul ul li.last a {
+    border-bottom: medium none;
+}
+#main-menu-links ul ul li.expanded {
+    background: url("images/icn-arrow-right-light.png") no-repeat scroll 96.5% 50% transparent;
+}
+
+#main-menu-links ul ul li a:hover, #main-menu-links ul ul li a:visited:hover {
+    background: url("images/bg-shade-medium.png") repeat-x scroll 0 100% #b3b3b3 !important;
+    color: #fff !important;
+}
+
+*/
