@@ -1,0 +1,45 @@
+/* override bartik styles. */
+
+body {
+    font-size: 100%;
+}
+body,
+#site-slogan,
+.ui-widget,
+.comment-form label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#logo {
+    float: left;
+    padding: 0px 0px 0px 0px;
+}
+#name-and-slogan {
+    float: left;
+    padding-top: 15px;
+    margin: 10px 0 0 10px;
+}
+#site-name {
+    font-size: 1.821em;
+}
+.circular {
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    background: #E2EADB;
+    text-align: center;
+}
+.circular-over {
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    background: #F6F8F3;
+    text-align: center;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.nodecoration {
+    text-decoration: none;
+}

@@ -1,0 +1,29 @@
+/* override bartik layout css */
+
+#main {
+    width: 95%;
+    margin-left: 5px;
+    margin-right: auto;
+}
+#header div.section {
+    position: relative;
+    margin-left: 4px;
+    margin-right: 0px;
+}
+.with-secondary-menu .region-header {
+    margin-top: 0;
+}
+.one-sidebar #content {
+    width: 75%;
+}
+.two-sidebars #content {
+    width: 480px;
+}
+.no-sidebars #content {
+    width: 1280px;
+    float: none;
+}
+#sidebar-first,
+#sidebar-second {
+    width: 25%;
+}
