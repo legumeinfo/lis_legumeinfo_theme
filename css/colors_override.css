@@ -1,36 +1,4 @@
-/* override bartik colors. created palette from original #87a96b:
-
-HTML:#001000
-RGB:0  16  0
-DARKENED:60%
-HTML:#082A00
-RGB:8  42  0
-DARKENED:50%
-HTML:#214305
-RGB:33  67  5
-DARKENED:40%
-HTML:#3B5D1F
-RGB:59  93  31
-DARKENED:30%
-HTML:#547638
-RGB:84  118  56
-DARKENED:20%
-HTML:#6E9052
-RGB:110  144  82
-DARKENED:10%
-HTML:#87A96B
-RGB:135  169  107
-ORIGINAL
-HTML:#A86D6A
-RGB:168  109  106
-COMPLIMENT
-HTML:#8C6AA8
-RGB:140  106  168
-COMPLIMENT
-HTML:#6AA5A8
-RGB:106  165  168
-ORIGINAL
-*/
+/* override bartik colors. */
 #header {
     background-color: #87a96b;
     background-image: -moz-linear-gradient(top, #6e9052 0%, #87a96b 100%);

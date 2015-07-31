@@ -57,7 +57,7 @@ ul.nice-menu li a {
 }
 
 ul.nice-menu .menuparent li a {
-    background: #9dd8db; 
+    background: #c7dec7; 
     border-top-left-radius: 0; 
     border-top-right-radius: 0;
     -webkit-border-top-left-radius: 0;
@@ -67,7 +67,7 @@ ul.nice-menu .menuparent li a {
 }
 
 ul.nice-menu .menuparent li {
-    background: #9dd8db; 
+    background: #c7dec7; 
     border-top-left-radius: 0; 
     border-top-right-radius: 0;
     -webkit-border-top-left-radius: 0;
@@ -85,16 +85,10 @@ ul.nice-menu ul li {
     width: 20em;
 }
 
-/*
-ul.nice-menu li a.active {
-    color: #000;
-    background-color: white;
-}
-*/
-
 ul.nice-menu li a:hover {
     border: 0;
     color: white;
+    background: #6aa5a8;
 }
 
 ul.nice-menu-down li.menuparent {
@@ -102,12 +96,12 @@ ul.nice-menu-down li.menuparent {
 }
 
 ul.nice-menu-down li.menuparent a.active {
-    background: white url("../images/arrow-down.png") right center no-repeat;
+    background: white;
 }
 
 
 ul.nice-menu-down li.menuparent:hover {
-    background: #6AA5A8 url("../images/arrow-down.png") right center no-repeat;
+    background: #6aa5a8 url("../images/arrow-down.png") right center no-repeat;
 }
 
 ul.nice-menu-down li {
