@@ -85,23 +85,26 @@ ul.nice-menu ul li {
     width: 20em;
 }
 
+/*
 ul.nice-menu li a.active {
     color: #000;
-    background-color: #fff;
+    background-color: white;
 }
+*/
 
 ul.nice-menu li a:hover {
     border: 0;
-    color: #fff;
+    color: white;
 }
 
 ul.nice-menu-down li.menuparent {
     background: #e2eadb url("../images/arrow-down.png") right center no-repeat;
 }
 
-ul.nice-menu-down li.menuparent {
-    background: #e2eadb url("../images/arrow-down.png") right center no-repeat;
+ul.nice-menu-down li.menuparent a.active {
+    background: white url("../images/arrow-down.png") right center no-repeat;
 }
+
 
 ul.nice-menu-down li.menuparent:hover {
     background: #6AA5A8 url("../images/arrow-down.png") right center no-repeat;
@@ -109,6 +112,11 @@ ul.nice-menu-down li.menuparent:hover {
 
 ul.nice-menu-down li {
     background: #e2eadb;
+}
+
+ul.nice-menu-down li a.active {
+    color: #000;
+    background: white;
 }
 
 ul.nice-menu-down li {
