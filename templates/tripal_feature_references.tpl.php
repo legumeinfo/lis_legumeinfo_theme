@@ -5,9 +5,11 @@ $feature = $variables['node']->feature;
 if (strcmp($feature->type_id->name, 'genetic_marker') == 0 ) {
   // don't load
 }
+//adf: is this really needed? it looks redundant with the first test.
 else if (strcmp($feature->type_id->name, 'genetic_marker') == 0 ) {
   // don't load
 }
+<<<<<<< HEAD
 else if (strcmp($feature->type_id->name, 'gene') == 0 ) {
   // don't load
 }
