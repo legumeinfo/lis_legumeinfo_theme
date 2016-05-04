@@ -77,11 +77,17 @@
       
       // Set site logo
       var site_logo;
+      var instructions;
       if (species == 'Glycine max') {
         site_logo = '/sites/all/themes/legumeinfo_theme/images/sb_logo_sm.jpg';
+        instructions = "All fields are optional and partial names are accepted. You will be redirected to SoyBase.";
       }
       else if (species == 'Arachis hypogaea' || species == 'Arachis spp.') {
         site_logo = '/sites/all/themes/legumeinfo_theme/images/peanutbase_logo_sm.jpg';
+        instructions = "All fields are optional and partial names are accepted. You will be redirected to PeanutBase.";
+      }
+      else {
+        instructions = "All fields are optional and partial names are accepted. Click column headers to sort.";
       }
       
       
@@ -99,7 +105,6 @@
         // Show site icon
         $('#site-logo').attr('src', site_logo);
         $('#site-logo').css('display', 'inline');
-        
       }
       else {
         $('label[for="edit-trait-class"]').css('display', 'inline');
@@ -113,9 +118,11 @@
         
         // Hide site icon
         $('#site-logo').css('display', 'none');
-
       }
-    });
+      
+      // Set instructions
+      $('#search-instructions').html(instructions);
+    });//change
     
   });//ready
 })(jQuery);
