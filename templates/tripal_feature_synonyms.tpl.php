@@ -5,7 +5,7 @@ $feature = $variables['node']->feature;
 if (strcmp($feature->type_id->name, 'genetic_marker') == 0 ) {
   // don't load
 }
-else if (strcmp($feature->type_id->name, 'genetic_marker') == 0 ) {
+else if (strcmp($feature->type_id->name, 'QTL') == 0 ) {
   // don't load
 }
 else if (strcmp($feature->type_id->name, 'linkage_group') == 0 ) {
