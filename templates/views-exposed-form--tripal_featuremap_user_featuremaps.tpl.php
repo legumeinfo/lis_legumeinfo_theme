@@ -30,7 +30,7 @@
 Please enter text for the name and/or description for a map and click "Search". 
 Leave both fields empty and click search to see a list of all maps.
 <br>
-For example, search for "Stampede" or "concensus".
+For example, search for "Stampede" or "consensus".
 
 <div class="views-exposed-form">
   <div class="views-exposed-widgets clearfix">
