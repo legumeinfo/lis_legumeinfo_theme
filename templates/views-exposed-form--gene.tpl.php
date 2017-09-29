@@ -68,6 +68,10 @@
         <?php print $offset; ?>
       </div>
     <?php endif; ?>
+
+
+<table class="views-submit-button-table">
+<tr><td style="border: none; background-color: lightgray;">
     <div class="views-exposed-widget views-submit-button">
       <?php print $button; ?>
     </div>
@@ -76,5 +80,9 @@
         <?php print $reset_button; ?>
       </div>
     <?php endif; ?>
+</td></tr>
+</table>
+
+
   </div>
 </div>
