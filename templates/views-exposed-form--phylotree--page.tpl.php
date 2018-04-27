@@ -26,10 +26,20 @@
     print $q;
   ?>
 <?php endif; ?>
+
+<div id="form-wrapper"> <!-- form input fields begin -->
+
 <div class="views-exposed-form">
   <div class="views-exposed-widgets clearfix">
+
+    <?php $widget_count = 0; ?>
     <?php foreach ($widgets as $id => $widget): ?>
-      <div id="<?php print $widget->id; ?>-wrapper" class="views-exposed-widget views-widget-<?php print $id; ?>">
+
+      <?php if ($widget_count % 3 == 0) { ?>
+      <div class="row-of-inputs" class="roi-<?php print $widget_count; ?>">
+      <?php } ?>
+
+      <div id="<?php print $widget->id; ?>-wrapper" class="views-exposed-widget views-widget-<?php print $widget_count; ?>">
         <?php if (!empty($widget->label)): ?>
           <label for="<?php print $widget->id; ?>">
             <?php print $widget->label; ?>
@@ -49,7 +59,14 @@
           </div>
         <?php endif; ?>
       </div>
+
+     <?php $widget_count++; ?>
+     <?php if ($widget_count % 3 == 0) { ?>
+     </div> <!-- end row-of-inputs -->
+     <?php } ?>
+
     <?php endforeach; ?>
+
     <?php if (!empty($sort_by)): ?>
       <div class="views-exposed-widget views-widget-sort-by">
         <?php print $sort_by; ?>
@@ -68,13 +85,20 @@
         <?php print $offset; ?>
       </div>
     <?php endif; ?>
-    <div class="views-exposed-widget views-submit-button">
+
+
+    <div style="display:block; float:left; width: 100%;">
+      <div class="views-exposed-widget views-submit-button">
       <?php print $button; ?>
-    </div>
+      </div>
     <?php if (!empty($reset_button)): ?>
       <div class="views-exposed-widget views-reset-button">
         <?php print $reset_button; ?>
       </div>
     <?php endif; ?>
-  </div>
+    </div>
+
 </div>
+</div>
+
+</div> <!-- ./end form-wrapper  -->
